@@ -24,4 +24,5 @@ router.register(r'messageboard', views.PostViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('',  include('messageboard.urls')),
 ]

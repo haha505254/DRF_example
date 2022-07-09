@@ -6,7 +6,9 @@ from rest_framework.permissions import AllowAny
 from .models import Post
 from .serializers import PostSerializer
 
+def index(request):
+    return render(request,'messageboard/index.html')
+
 class PostViewSet(viewsets.ModelViewSet):
-  queryset = Post.objects.all()
-  serializer_class = PostSerializer
-  
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
