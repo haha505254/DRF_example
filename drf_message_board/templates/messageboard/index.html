@@ -13,6 +13,8 @@
   <title>Hello, world!</title>
 </head>
 
+
+
 <body>
   <form action="/api/messageboard/" method="post">
     {% csrf_token %}
@@ -24,11 +26,13 @@
       <label for="pwd">Password:</label>
       <input type="text" class="form-control" id="text" name ="text">
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
+    <div >
+      <input class="form-control" id="party"  type = "datetime-local" name="published_date">
+    </div> 
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
+
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -36,6 +40,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
+
+
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
