@@ -7,6 +7,7 @@ from .models import Post
 from .serializers import PostSerializer
 
 def index(request):
+    
     return render(request,'messageboard/index.html')
 
 class PostViewSet(viewsets.ModelViewSet):
